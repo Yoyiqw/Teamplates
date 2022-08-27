@@ -1,0 +1,17 @@
+.header {
+    padding: 36px 0 25px 0;
+    &__container {
+        @include flex (center, space-around, wrap)
+    }
+    &__list{
+        @include flex(center,flex-end,wrap);
+    }
+    
+    &__link{
+        @include font(400, 16, $text-Black)
+    }
+    
+    &__item{
+        margin-left: 30px;
+    }
+}
