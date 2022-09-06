@@ -5,23 +5,61 @@
         margin: 0 auto;
     }
     &__test {
-        @include flex(start, space-between, wrap);
+        @include flex(start, space-between);
     }
     &__title{
         @include font (700, 30px, $text-Black);
         margin-bottom: 20px;
     }
     &__description{
-        @include font (300, 16px, $text-Black)
+        @include font (300, 16px, $text-Black);
     }
     &__all{
         max-width: 139px;
-        height: 40px;
-        background: #0F4898;
     }
     &__text{
+        background: #0F4898;
         text-align: center;
         padding: 14px 18px 13px 18px ;
-        @include font (400, 12px, $text-white)
+        @include font (400, 12px, $text-white);
+        border: none;
+        cursor: pointer;
+    }
+    &__date{
+         @include font (300, 11px, $text-Black);
+         
+    }
+
+    &__name {
+        max-width: 213px;
+        @include font (500, 18px, $text-Black);
+        margin-top: 15px;
+    }
+    &__more {
+        margin-top: 15px;
+        max-width: 215px;
+        @include font (600, 11px,$text-Black);
+        letter-spacing: 0.05em;
+        line-height: 14px; 
+    }
+    &__info {
+        padding: 30px 22px 30px 18px;
+        
+    }
+    &__btn {
+        max-width: 125px;
+        height: 40px;
+        background: #0F4898;
+        text-align: center;
+        padding: 14px 18px 13px 18px ;
+        @include font (400, 12px, $text-white);
+        border: none;
+        cursor: pointer;
+        margin: 33px 0px 127px 0px;
+    }
+    &__const {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between
     }
 }

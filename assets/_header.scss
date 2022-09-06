@@ -4,12 +4,6 @@
     padding: 36px 0 25px 0;
     border-bottom: 1px solid white;
 
-    &__container {
-        max-width: 1107px;
-        margin: 0 auto;
-        @include flex (center, space-between, wrap)
-    }
-
     &__list {
         @include flex(center, flex-end, wrap);
     }
@@ -24,10 +18,15 @@
 
     &__number {
         @include font (400, 12px, $text-white);
+        font-family: 'Roboto';
         text-align: center;
 
         p:nth-child(2) {
             margin-top: 10px;
         }
+    }
+    &__content{
+        display: flex;
+        justify-content: space-around;
     }
 }
