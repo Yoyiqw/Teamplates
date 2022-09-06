@@ -1,14 +1,58 @@
 .projects {
     margin-top: 100px;
     &__container{
+
         max-width: 825px;
         margin: 0 auto;
     }
     &__title {
+
         margin-bottom: 20px;
         @include font (700, 30px, $text-Black)
+
     }
-    &__description{
+    &__description {
         @include font (300, 16px, $text-Black)
+
     }
+    &__box {
+
+        max-width: 428px;
+        height: 200px;
+        background: #000;
+        margin-top: 100px;
+        
+    }
+    &__info {
+
+        padding: 30px 40px 46px 40px;
+        max-width: 348px;
+        height: 124px;
+        @include font (400, 13px, $text-white)
+
+    }
+    &__arrows {
+        margin-top: 47px;
+        display: flex;
+
+    }
+    &__arrowL {
+        max-width: 40px;
+        height: 40px;
+        border: 1px solid #0F4898;
+        margin-right: 5px;
+    }
+    &__arrow {
+        padding: 15px 18px 15px 17px;
+    }
+
+    &__arrowR {
+        max-width: 40px;
+        height: 40px;
+        border: 1px solid #585858;
+    }
+    &__arrow2 {
+        padding: 15px 18px 15px 17px;
+    }
+
 }
