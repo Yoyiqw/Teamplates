@@ -1,0 +1,27 @@
+.news {
+    margin-top: 200px;
+    &__container{
+        max-width: 825px;
+        margin: 0 auto;
+    }
+    &__test {
+        @include flex(start, space-between, wrap);
+    }
+    &__title{
+        @include font (700, 30px, $text-Black);
+        margin-bottom: 20px;
+    }
+    &__description{
+        @include font (300, 16px, $text-Black)
+    }
+    &__all{
+        max-width: 139px;
+        height: 40px;
+        background: #0F4898;
+    }
+    &__text{
+        text-align: center;
+        padding: 14px 18px 13px 18px ;
+        @include font (400, 12px, $text-white)
+    }
+}
