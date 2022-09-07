@@ -1,32 +1,44 @@
 .header {
-    position: absolute;
-    width: 100%;
-    padding: 36px 0 25px 0;
-    border-bottom: 1px solid white;
+  position: absolute;
+  width: 100%;
+  padding: 36px 0 25px 0;
+  border-bottom: 1px solid white;
 
+  &__list {
+    @include flex(center, flex-end, wrap);
+  }
+
+  &__link {
+    @include font(400, 13px, $text-white)
+  }
+
+  &__item {
+    margin-left: 30px;
+  }
+
+  &__number {
+    @include font (400, 12px, $text-white);
+    font-family: 'Roboto';
+    text-align: center;
+
+    p:nth-child(2) {
+      margin-top: 10px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media  screen and (max-width:848px) {
+  .header{
+    &__number{
+      display: none;
+    }
     &__list {
-        @include flex(center, flex-end, wrap);
+      display: none;
     }
-
-    &__link {
-        @include font(400, 13px, $text-white)
-    }
-
-    &__item {
-        margin-left: 30px;
-    }
-
-    &__number {
-        @include font (400, 12px, $text-white);
-        font-family: 'Roboto';
-        text-align: center;
-
-        p:nth-child(2) {
-            margin-top: 10px;
-        }
-    }
-    &__content{
-        display: flex;
-        justify-content: space-around;
-    }
+  }
 }

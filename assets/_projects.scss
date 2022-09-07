@@ -43,6 +43,7 @@
         cursor: pointer;
         z-index: 1;
         background-color: F4F4F4;
+        margin-left:20px;
     }
 
     &__arrow {
@@ -67,4 +68,45 @@
         justify-content: space-between;
     }
 
+}
+
+@media screen and (max-width:768px){
+    .projects {
+        padding: 0px 20px 0px 20px;
+        &__arrowL {
+            margin-bottom: -15px;
+        }
+    }
+    
+}
+
+@media screen and (max-width:838px){
+    .projects{
+        &__arrowL{
+            margin-left: 20px;
+        }
+        
+        &__content {
+            margin: 0px 20px 0px 5px;
+        }
+    }
+}
+
+@media screen and (max-width:838px){
+    .projects{
+        &__left{
+            height: 440px;
+        }
+        &__photo {
+            max-width: 440px;
+        }
+}
+}
+
+@media screen and (max-width:728px) {
+    .projects {
+        &__arrowL {
+            margin-left: 5px;
+        }
+    }
 }

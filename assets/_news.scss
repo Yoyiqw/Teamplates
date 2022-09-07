@@ -60,6 +60,55 @@
     &__const {
         margin-top: 40px;
         display: flex;
-        justify-content: space-between
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
+}
+
+@media screen and (max-width:768px) {
+    .news{
+        &__const {
+            justify-content: space-around;
+            padding: 0px 20px 0px 20px;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .news{
+        &__test  {
+            padding: 0px 25px 0px 25px;
+        }
+    }
+}
+
+@media screen and (max-width:752px) {
+    .news{
+        &__arrowR  {
+            padding: 0px 25px 0px 25px;
+        }
+        
+        &__arrowL  {
+            padding: 0px 25px 0px 25px;
+        }
+    }
+}
+
+@media screen and (max-width:836px) {
+    .news {
+        .container {
+            margin: 0px 20px 0px 20px;
+        }
+    }
+    
+}
+
+@media screen and (max-width:804px) {
+    .news {
+        &__const {
+            margin: 40px 70px 0px 70px;
+            justify-content: space-around;
+        }
+    }
+    
 }
