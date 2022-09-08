@@ -1,11 +1,12 @@
 .footer {
     max-width: 100%;
-    height: 125px;
+    height: 200px;
     background: #323232;
 
     &__link {
         @include font (400, 14px, $text-white);
-        text-align: center
+        text-align: center;
+
     }
 
     &__description {
@@ -27,5 +28,13 @@
     }
     &__item {
         margin-left: 25px;
+    }
+}
+
+@media screen and (max-width:478px){
+    .footer{
+        &__description {
+            text-align: center;
+        }
     }
 }

@@ -5,12 +5,12 @@
     &__title {
         margin-bottom: 20px;
         @include font (700, 30px, $text-Black);
-    
+
     }
 
     &__description {
         @include font (300, 16px, $text-Black);
-       
+
     }
 
     &__box {
@@ -43,7 +43,7 @@
         cursor: pointer;
         z-index: 1;
         background-color: F4F4F4;
-        margin-left:20px;
+        margin-left: 20px;
     }
 
     &__arrow {
@@ -70,43 +70,144 @@
 
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:768px) {
     .projects {
         padding: 0px 20px 0px 20px;
+
         &__arrowL {
             margin-bottom: -15px;
         }
     }
-    
+
 }
 
-@media screen and (max-width:838px){
-    .projects{
-        &__arrowL{
+@media screen and (max-width:838px) {
+    .projects {
+        &__arrowL {
             margin-left: 20px;
         }
-        
+
         &__content {
             margin: 0px 20px 0px 5px;
         }
     }
 }
 
-@media screen and (max-width:838px){
-    .projects{
-        &__left{
+@media screen and (max-width:838px) {
+    .projects {
+        &__left {
             height: 440px;
         }
+
         &__photo {
             max-width: 440px;
         }
-}
+    }
 }
 
 @media screen and (max-width:728px) {
     .projects {
         &__arrowL {
             margin-left: 5px;
+        }
+    }
+}
+
+@media screen and (max-width:630px) {
+    .projects {
+        &__photo {
+            max-width: 350px;
+        }
+
+        &__title {
+            font-size: 25px;
+        }
+
+        &__info {
+            height: 60px;
+            font-size: 12px;
+            padding: 45px 40px 45px 50px;
+            margin-bottom: 20px;
+        }
+    }
+
+}
+
+@media screen and (max-width:630px) {
+    .projects {
+        &__photo {
+            max-width: 320px;
+        }
+        &__title{
+            font-size: 20px;
+        }
+        &__description {
+            font-size: 15px;
+            max-height: 20px;
+        }
+        &__box {
+            max-height: 175px;
+        }
+    }
+}
+
+
+@media screen and (max-width:368px) {
+    .projects {
+        &__info {
+            font-size: 10px;
+        }
+    }
+}
+
+@media screen and (max-width:458px) {
+    .projects {
+        &__photo {
+            max-width: 290px;
+        }
+    }
+}
+
+@media screen and (max-width:458px) {
+    .projects {
+        &__photo {
+            max-width: 290px;
+        }
+    }
+}
+@media screen and (max-width:425px) {
+    .projects {
+        &__photo {
+            max-width: 255px;
+        }
+        &__info {
+            padding: 25px;
+        }
+        &__title {
+            font-size: 18px;
+        }
+    }
+}
+
+@media screen and (max-width:375px) {
+    .projects {
+        &__photo {
+            max-width: 200px;
+        }
+        
+        &__info {
+            padding: 13px;
+        }
+    }
+}
+
+@media screen and (max-width:365px) {
+    .projects {
+        &__photo {
+            max-width: 190px;
+        }
+        &__description {
+            max-width: 12px;
         }
     }
 }
